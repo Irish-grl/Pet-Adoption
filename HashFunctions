@@ -1,0 +1,45 @@
+class Hash:
+
+    def __init__(self, petList = 50):
+        self.table = []
+
+        for i in range(petList):
+            self.table.append([])
+
+
+    def insert(self, key, packageId):
+        bucket = hash(key) % len(self.table)
+        bucket_list = self.table[bucket]
+
+        for kv in bucket_list:
+            if kv[0] == key:
+                kv[1] == packageId
+                return True
+
+        key_value = [key, packageId]
+        bucket_list.append(key_value)
+        return True
+
+
+    def find(self, key):
+        pet_list = []
+        bucket = hash(key) % len(self.table)
+        bucket_list = self.table[bucket]
+
+        for kv in bucket_list:
+            if kv[0] == key:
+                pet_list  = kv[1]
+                return pet_list
+            else:
+                print('Pet was not found in the list')
+
+
+    def remove(self, key):
+        bucket = hash(key) % len(self.table)
+        bucket_list = self.table[bucket]
+
+        for kv in bucket_list:
+            if kv[0] == key:
+                bucket_list.remove([kv[0], kv[1]])
+            else:
+                print('Pet was not found in the list')
