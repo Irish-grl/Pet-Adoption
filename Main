@@ -16,6 +16,19 @@ def findPetById(id):
     return -1, None
 
 
+def findPetByName(name):
+    for pet in pets:
+        pId = int(pets.petId)
+        pName = pets.name
+        pType = pets.type
+        pGender = pets.gender
+        pZipCode = pets.zipCode
+
+        if pName == name:
+            return pId, pName, pType, pGender, pZipCode
+    return -1, None
+
+
 def findPetByType(type):
     for pet in pets:
         pId = int(pets.petId)
@@ -26,6 +39,20 @@ def findPetByType(type):
 
 
         if pType == type :
+            return pId, pName, pType, pGender, pZipCode
+    return -1, None
+
+
+def findPetByGender(gender):
+    for pet in pets:
+        pId = int(pets.petId)
+        pName = pets.name
+        pType = pets.type
+        pGender = pets.gender
+        pZipCode = pets.zipCode
+
+
+        if pGender == gender :
             return pId, pName, pType, pGender, pZipCode
     return -1, None
 
