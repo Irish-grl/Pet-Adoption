@@ -1,0 +1,43 @@
+from ImportPets import ImportPets
+
+pets = ImportPets().petTable
+
+
+def findPetById(id):
+    for pet in pets:
+        pId = int(pets.petId)
+        pName = pets.name
+        pType = pets.type
+        pGender = pets.gender
+        pZipCode = pets.zipCode
+
+        if pId == id:
+            return pId, pName, pType, pGender, pZipCode
+    return -1, None
+
+
+def findPetByType(type):
+    for pet in pets:
+        pId = int(pets.petId)
+        pName = pets.name
+        pType = pets.type
+        pGender = pets.gender
+        pZipCode = pets.zipCode
+
+
+        if pType == type :
+            return pId, pName, pType, pGender, pZipCode
+    return -1, None
+
+
+def findPetByZipCode(zipCode):
+    for pet in pets:
+        pId = int(pets.petId)
+        pName = pets.name
+        pType = pets.type
+        pGender = pets.gender
+        pZipCode = pets.zipCode
+
+        if pZipCode == zipCode:
+            return pId, pName, pType, pGender, pZipCode
+    return -1, None
