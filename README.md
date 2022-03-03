@@ -5,7 +5,7 @@ Program imports a CSV file of pets to a hash table. The user can then search for
 
 Assumptions are: users will want to add, remove pets from the list as they are adopted, so these functions were added to the Hash class. Also, first paragraph of instruction states ability to search for a pet based off of location, type, and gender, so these functions were added first. Then 'initial' labeled instruction states ability to import pets in bulk, search for a pet by location, type, then by any set of attributes. To make the program more robust, I added the ability to import in bulk using a CSV file, and the ability to search by the pet ID and name. Since customers will often have a wish list of items they would prefer to have in a program, being able to add the additional functionality for the users as an upgrade or enhancement is very beneficial.
 
-The program is extensible/scalable in that the difficulty in upgrading the program to increase the pet attributes, add additional classes for adoption customers, adoption objects can be accomplished without having to modify the entire program.
+The program is extensible/scalable in that the ease in upgrading the program to increase the pet attributes, add additional classes for adoption customers and adoption objects can be accomplished without having to modify the entire program.
 
 I ran out of time to complete a single search function that allows user to search for any combination of pet attributes.
 
