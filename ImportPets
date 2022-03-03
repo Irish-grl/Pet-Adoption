@@ -1,0 +1,21 @@
+import csv
+
+from Hash import Hash
+from Pet import Pet
+
+class ImportPets:
+
+
+    petTable = Hash()
+
+    with open('PetsList.csv', 'r') as pets:
+        pet_data = csv.reader(pets, delimiter = ',')
+        for p in pet_data:
+            pId = p[0]
+            pName = p[1]
+            pType = p[2]
+            pGender = p[3]
+            pZipCode = p[4]
+
+            p = Pet(pId, pName, pType, pGender, pZipCode)
+            petTable.insert(pId, p)
