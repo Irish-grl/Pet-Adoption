@@ -8,3 +8,4 @@ class Pet:
         self.type = type
         self.gender = gender
         self.zipCode = zipCode
+
