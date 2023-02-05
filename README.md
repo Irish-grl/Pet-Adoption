@@ -1,5 +1,4 @@
-# kyruus
-Pet Adoption Program
+#Pet Adoption Program
 
 Program imports a CSV file of pets to a hash table. The user can then search for a pet by the ID, Gender, Type, Name, and Location. 
 
